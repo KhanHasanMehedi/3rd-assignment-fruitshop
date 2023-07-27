@@ -42,25 +42,36 @@
             </div>
         </nav>
 
-        <div class="carousel w-full pt-4">
-            <div id="slide1" class="carousel-item relative w-full">
-              <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
-                <div class="hero-content text-center text-neutral-content">
-                  <div class="w-full">
-                    <h1 class="mb-5 text-7xl text-white font-extrabold">Exotic tastes at your <br>
-                      doorstep</h1>
-                    <p class="mb-5 text-white">We supply highly quality organic products</p>
-                    <button class="btn bg-[#F85559] text-sm text-white font-extrabold">Shop Now</button>
-                  </div>
-                </div>
-              </div>
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
+  
+    <div class="carousel w-full pt-4">
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+          <div class="hero-content text-center text-neutral-content">
+            <div class="w-full">
+              <h1 class="mb-5 text-7xl text-white font-extrabold">Exotic tastes at your <br>
+                doorstep</h1>
+              <p class="mb-5 text-white">We supply highly quality organic products</p>
+              <button class="btn bg-[#F85559] text-sm text-white font-extrabold">Shop Now</button>
+           </div>
+      </div>
+    </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a> 
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+        
+    </div> 
+    <!-- <div>
+      <img src="./images/fruit1.png" alt="">
+      <img src="./images/fruit2.png" alt="">
+      <img src="./images/fruit3.png" alt="">
+      <img src="./images/fruit4.png" alt="">
+      <img src="./images/fruit5.png" alt="">
+    </div> -->
+    
+  
 
-            <div id="slide2" class="carousel-item relative w-full">
+        <div id="slide2" class="carousel-item relative w-full">
               <div id="slide2" class="carousel-item relative w-full">
                 <div class="hero min-h-screen" style="background-image: url(./images/banner2.png);">
                   <div class="hero-content text-center text-neutral-content">
@@ -194,7 +205,19 @@
                   <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
                 </svg>
                 <div class="text-[#F85559]">
-                  <a href="">Details</a>
+                  <button class="" onclick="my_modal_3.showModal()">Details</button>
+                  <dialog id="my_modal_3" class="modal">
+                    <form method="dialog" class="modal-box">
+                      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                        <figure class="px-10 pt-10">
+                          <img src="./images/fruit7.png" alt="Orange" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">12.90$ - 18.85$</h2>
+                          <p>Orange</p>
+                        </div>
+                    </form>
+                  </dialog>
                 </div>
               </div>
           </div>
@@ -239,14 +262,14 @@
               </div>
           </div>
           </div>
-          <div class="btn text-white bg-[#F85559] m-6 ml-96 text-center">
-           <button>Shop All</button>
+          <div class="flex justify-center">
+           <button class="text-white bg-[#F85559] p-3 rounded-md mt-6 mb-4">Shop All</button>
           </div>
       </div>
 
-        <section class="text-white relative text-center justify-center" style="background-image:url(./images/team.png); height: 690px;">
+        <section class="text-white relative text-center justify-center mt-10" style="background-image:url(./images/team.png); 690px;">
           <div>
-            <h1 class="text-5xl font-extrabold pt-32">Meet the team section</h1>
+            <h1 class="text-5xl font-extrabold pt-20">Meet the team section</h1>
             <p class="pt-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
               Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
@@ -429,7 +452,7 @@
 
     </main>
 
-    <footer class="footer footer-center p-10 mt-2 bg-black text-white rounded">
+    <footer class="footer footer-center p-10 mt-1 bg-black text-white rounded">
       <div class="flex">
         <img src="./images/logo.png" alt="">
         <h1 class="text-3xl font-extrabold">Fruit Burst</h1>
